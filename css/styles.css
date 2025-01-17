@@ -63,6 +63,7 @@
   --shadow1: 0px 10px 25px 0px #2B344A1F;
   --shadow2: 0px 5px 18px 5px #40485726;
   --backdrop: rgba(24, 24, 24, 0.2);
+  --main-font:"Barlow Semi Condensed", serif;
 }
 
 /*---------- Reset css styles ----------- */
@@ -532,7 +533,17 @@ h6 {
     transform: translate(-50%, -50%); /* End at the center */
   }
 }
+.video-text {
+  opacity: 1;
+  transition: opacity 1s ease-in-out; /* Smooth fade-in and fade-out */
+}
+
+.fade-out {
+  opacity: 0;
+}
 /* video end */
+
+
 
 .text-btn-uppercase2 {
   font-family: "Instrument Sans", sans-serif;
@@ -1808,6 +1819,7 @@ a:focus, a:hover {
   display: flex;
   align-items: center;
   gap: 4px;
+  font-family:var(--main-font) ;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -3430,7 +3442,7 @@ footer.has-pb {
 }
 .wrap-slider img {
   width: 100%;
-  height: 100%;
+  height: 90vh;
   object-fit: cover;
 }
 .wrap-slider .content-slider {
@@ -7186,8 +7198,16 @@ form .cols > * {
 }
 .collection-position .img-style img {
   width: 100%;
-  height: 100%;
+  height: 85%;
   object-fit: cover;
+}
+.hm-sh-titles {
+  display: flex
+  !important;
+  flex-direction: column;
+
+  gap: 15px!important;
+
 }
 .collection-position .content {
   display: grid;
@@ -7227,8 +7247,11 @@ form .cols > * {
 }
 .collection-position-2 .img-style img {
   width: 100%;
-  height: 100%;
+  height: 70vh;
   object-fit: cover;
+}
+.ofr-text {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7), 0 0 25px rgba(0, 0, 0, 0.3);
 }
 .collection-position-2 .content {
   position: absolute;
@@ -13912,10 +13935,17 @@ ul.list-text.type-number {
     min-width: 300px;
   }
 }
+@media (max-width: 992px) {
+  .banner-img img{
+    display: none;
+    
+  }
+}
 @media (min-width: 992px) {
   .slider-parallax .wrap-slider {
     background-attachment: fixed;
   }
+ 
 
   #scroll-top {
     bottom: 40px;
@@ -14513,6 +14543,18 @@ ul.list-text.type-number {
   .tf-marquee.marquee-style2 .marquee-child-item .icon {
     font-size: 40px;
   }
+}
+@media (max-width: 1075px) {
+  .cat-text{
+    width: 100%!important;
+  }
+}
+@media (max-width: 700px) {
+  .video-container {
+    height: 70vh!important;
+  }
+
+
 }
 @media (min-width: 1200px) {
   .sidebar-filter .canvas-body {

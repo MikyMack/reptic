@@ -44,6 +44,32 @@
 (function ($) {
   "use strict";
 
+  // banner text
+  const texts = [
+    "Elegant Luxury Linen",
+    "Indulge in Softness",
+    "Premium Quality Linens",
+    "Crafted for Comfort"
+  ];
+
+  let currentIndex = 0;
+
+  // Function to change text every 3 seconds with smooth transitions
+  setInterval(() => {
+    const textElement = document.getElementById("changing-text");
+
+    // Add fade-out class to start the fade-out effect
+    textElement.classList.add("fade-out");
+
+    // Wait for the fade-out to finish before changing the text
+    setTimeout(() => {
+      currentIndex = (currentIndex + 1) % texts.length; // Cycle through the array
+      textElement.textContent = texts[currentIndex]; // Update the text
+
+      // Remove fade-out class and trigger fade-in
+      textElement.classList.remove("fade-out");
+    }, 1000); // Wait for 1 second before changing the text (fade-out duration)
+  }, 3000); 
   /* Select Image
   -------------------------------------------------------------------------------------*/
   var selectImages = function () {
