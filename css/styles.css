@@ -2746,6 +2746,31 @@ footer .footer-infor {
   flex-direction: column;
   gap: 16px;
 }
+.contact-icon {
+  position: fixed;
+  bottom: 80px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  background-color: #f3f3f3; /* Optional background color */
+  border-radius: 50%; /* Makes it circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+  padding: 10px; /* Add padding inside the icon */
+  z-index: 1000; /* Ensure it's above other elements */
+}
+
+.contact-icon a {
+  display: block;
+  text-decoration: none;
+}
+
+.contact-icon img {
+  width: 50px; /* Icon size */
+  height: 50px;
+  display: block;
+}
+
+.footer-logo a img{
+  width: 65px
+}
 footer .footer-infor .footer-logo > a {
   display: flex;
 }
