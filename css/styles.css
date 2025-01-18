@@ -2366,7 +2366,7 @@ a:focus, a:hover {
   border-bottom: 1px solid var(--line);
 }
 .nav-ul-mb .nav-mb-item .mb-menu-link {
-  min-height: 48px;
+  min-height: 48px!important;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -12732,7 +12732,7 @@ ul.list-text.type-number {
 }
 .about-us-main .about-us-features img {
   width: 100%;
-  height: 100%;
+  height: 65vh;
   object-fit: cover;
 }
 .about-us-main .about-us-content {
@@ -12744,7 +12744,12 @@ ul.list-text.type-number {
 .about-us-main .about-us-content .widget-tabs {
   margin-bottom: 32px;
 }
+.brand-item img{
+  height: 150px;
+  border-radius: 20px;
 
+
+}
 .team-item {
   display: flex;
   flex-direction: column;
