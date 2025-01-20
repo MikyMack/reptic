@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
 /*--------- Abstracts variable ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
 @import url(bootstrap-select.min.css);
 :root {
-  --primary: #E43131;
+  --primary: #1b1414;
   --main: #181818;
   --secondary: #4D4E4F;
   --secondary-2:#A0A0A0;
@@ -118,7 +119,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family:  "Barlow Semi Condensed", serif;
+  font-family: "Montserrat", serif;
   font-size: 100%;
   font-style: inherit;
   font-weight: inherit;
@@ -379,10 +380,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", serif!important;
+  font-family: var(--main-font);
   text-rendering: optimizeLegibility;
   color: var(--main);
-  font-weight: 500;
+  font-weight: 400;
 }
 
 .title-display {
@@ -1548,7 +1549,7 @@ a:focus, a:hover {
   border-right: 1px solid var(--line);
 }
 .header-default .header-bottom .wrapper-header {
-  min-height: 58px;
+  min-height: 62px;
 }
 .header-default .header-bottom.style-2 .wrapper-header {
   min-height: 65px;
@@ -1600,6 +1601,7 @@ a:focus, a:hover {
   min-height: auto;
   padding-top: 22px;
   padding-bottom: 22px;
+
 }
 .header-default .mobile-menu {
   display: inline-flex;
@@ -1675,6 +1677,7 @@ a:focus, a:hover {
   justify-content: space-between;
   gap: 12px;
 }
+
 .tf-list-categories .categories-item .icon {
   font-size: 20px;
   -webkit-transition: all 0.3s ease;
@@ -1913,7 +1916,9 @@ a:focus, a:hover {
   background-color: var(--main);
 }
 .main-header{
-  position: relative
+  position: relative;
+  background-color: #fafafa;
+  
 }
 .logo-header img {
   width: auto;
@@ -1932,6 +1937,7 @@ a:focus, a:hover {
 .box-nav-ul .menu-item:hover > .sub-menu {
   pointer-events: all;
   opacity: 1;
+   
   visibility: visible;
   transform: translateX(0px) translateY(0px);
 }
@@ -1952,6 +1958,7 @@ a:focus, a:hover {
   top: -22px;
   left: 110%;
   min-width: 200px;
+  
 }
 .box-nav-ul .menu-item-2 .sub-menu::after {
   position: absolute;
@@ -1961,6 +1968,7 @@ a:focus, a:hover {
   height: 45px;
   background-color: transparent;
   left: -18%;
+ 
   top: 3px;
 }
 .box-nav-ul .menu-item-2:hover > .sub-menu {
@@ -1968,6 +1976,13 @@ a:focus, a:hover {
   opacity: 1;
   visibility: visible;
   transform: translateX(0px) translateY(0px);
+
+}
+.mobile-menu-logo img{
+  width: 50px;
+  float: right;
+  margin-top: 1.2rem;
+
 }
 .box-nav-ul .sub-menu {
   pointer-events: none;
@@ -2422,7 +2437,7 @@ a:focus, a:hover {
   line-height: 26px;
   transition: all 0.2s;
   padding: 4px 0px;
-  font-family: var(--main-font);
+  
 }
 .header-list-categories .categories-item a::after {
   content: "";
@@ -2576,7 +2591,7 @@ header.header-bg {
 }
 
 .header-dark {
-  background-color:#f7f7f7 ;
+  background-color:white ;
 }
 .header-dark .box-nav-ul .item-link {
   color: var(--main);
@@ -2689,6 +2704,7 @@ footer .footer-wrap {
 footer .footer-body {
   padding: 80px 0;
 }
+
 footer .footer-bottom-wrap {
   padding-top: 14px;
   border-top: 1px solid var(--line);
@@ -3215,6 +3231,7 @@ footer.has-pb {
 .tab-product .nav-tab-item a:hover, .tab-product .nav-tab-item a.active {
   color: var(--main);
   border-bottom-color: var(--main);
+  font-weight: 400;
 }
 .tab-product::-webkit-scrollbar {
   width: 0px;
@@ -6282,6 +6299,41 @@ form .cols > * {
   display: flex;
   align-items: center;
   gap: 16px;
+}
+.vdo-ret-logo{
+  width: 130px!important;
+  height: 120px!important;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.video-logo {
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
+  padding: 20px;
+      margin-right: 10px;/* Add padding for spacing inside the div */
+  border-radius: 10px; /* Optional: Rounded corners */
+  color: #fff; /* Ensure text is visible on dark background */
+  text-align: center; /* Center the content inside */
+  max-width: 320px; /* Optional: Set a max width */
+  margin: 0 auto;
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+ margin-top: 1rem;
+   /* Center the div horizontally if needed */
+}
+.video-logo img{
+  width: 150px!important;
+  height: 50px;
+  object-fit:contain ;
+}
+.video-logo p,
+.video-logo h6 {
+    margin: 5px 0;
+    color: white; 
+    font-size: 13px;/* Add spacing between the elements */
 }
 .offcanvas-compare .tf-compare-list .tf-compare-wrap .tf-compare-item .image {
   flex-shrink: 0;
@@ -13820,6 +13872,7 @@ ul.list-text.type-number {
 .thumbs-slider {
     max-width: 615px;
   }
+ 
 
   .tf-product-info-list {
     max-width: 615px;
@@ -13950,6 +14003,36 @@ ul.list-text.type-number {
   .banner-img img{
     display: none;
     
+  }
+  .video-logo{
+    height: 120px;
+    margin-bottom: 1rem;
+  }
+
+}
+@media (max-width: 552px) {
+  .video-logo{
+    height: 125px;
+    width: 100%;
+    margin-bottom: 0;
+    float: left;
+  
+  }
+  .box-content{
+    display: flex!important;
+    justify-content: center!important;
+    align-items: start!important;
+  }
+  .vdo-ret-logo{
+    height: 40px!important;
+    width: 40px!important;
+   
+  }
+  .tf-slideshow .title-display{
+    font-size: 28px!important;
+  }
+  .banner-title{
+    font-size: 14px;
   }
 }
 @media (min-width: 992px) {
@@ -16435,10 +16518,10 @@ button .icon {
   margin-right: 40px;
 }
 .banner-title {
-  
+  font-family: var(--main-font);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
- font-family: var(--main-font);
-  font-weight: 400; 
+ font-weight: 500;
+
 }
 .rtl .tf-countdown-lg .countdown__item:not(:last-child)::after {
   left: -22px;
