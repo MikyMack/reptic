@@ -37,8 +37,7 @@
     * Responsive
  ------------------------------------------------------------------------------ */
 /*--------- Abstracts variable ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+Antique&display=swap');
 @import url(bootstrap-select.min.css);
 :root {
   --primary: #E43131;
@@ -63,7 +62,7 @@
   --shadow1: 0px 10px 25px 0px #2B344A1F;
   --shadow2: 0px 5px 18px 5px #40485726;
   --backdrop: rgba(24, 24, 24, 0.2);
-  --main-font: "Barlow Semi Condensed", serif;
+  --main-font: "Montserrat", serif;
 }
 
 /*---------- Reset css styles ----------- */
@@ -189,7 +188,7 @@ html {
 }
 
 body {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Montserrat", serif!important;
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
@@ -14649,11 +14648,11 @@ ul.list-text.type-number {
     font-size: 28px;
   }
 
-  .slider-padding,
+  /* .slider-padding,
 .header-fullwidth {
     padding-left: 40px;
     padding-right: 40px;
-  }
+  } */
 
   .slider-default .box-content {
     left: 80px;
