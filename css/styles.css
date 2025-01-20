@@ -37,7 +37,8 @@
     * Responsive
  ------------------------------------------------------------------------------ */
 /*--------- Abstracts variable ---------- */
-@import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+Antique&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Athiti:wght@200;300;400;500;600;700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap');
+
 @import url(bootstrap-select.min.css);
 :root {
   --primary: #E43131;
@@ -154,7 +155,7 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  font-family:  "Barlow Semi Condensed", serif;
+  font-family:  "Saira", serif;
   font-size: 100%;
   font-style: inherit;
   font-weight: inherit;
@@ -1584,7 +1585,7 @@ a:focus, a:hover {
   border-right: 1px solid var(--line);
 }
 .header-default .header-bottom .wrapper-header {
-  min-height: 58px;
+  min-height: 62px;
 }
 .header-default .header-bottom.style-2 .wrapper-header {
   min-height: 65px;
@@ -1711,6 +1712,7 @@ a:focus, a:hover {
   justify-content: space-between;
   gap: 12px;
 }
+
 .tf-list-categories .categories-item .icon {
   font-size: 20px;
   -webkit-transition: all 0.3s ease;
@@ -1968,6 +1970,7 @@ a:focus, a:hover {
 .box-nav-ul .menu-item:hover > .sub-menu {
   pointer-events: all;
   opacity: 1;
+   
   visibility: visible;
   transform: translateX(0px) translateY(0px);
 }
@@ -1988,6 +1991,7 @@ a:focus, a:hover {
   top: -22px;
   left: 110%;
   min-width: 200px;
+  
 }
 .box-nav-ul .menu-item-2 .sub-menu::after {
   position: absolute;
@@ -1997,6 +2001,7 @@ a:focus, a:hover {
   height: 45px;
   background-color: transparent;
   left: -18%;
+ 
   top: 3px;
 }
 .box-nav-ul .menu-item-2:hover > .sub-menu {
@@ -2004,6 +2009,13 @@ a:focus, a:hover {
   opacity: 1;
   visibility: visible;
   transform: translateX(0px) translateY(0px);
+
+}
+.mobile-menu-logo img{
+  width: 50px;
+  float: right;
+  margin-top: 1.2rem;
+
 }
 .box-nav-ul .sub-menu {
   pointer-events: none;
@@ -2458,6 +2470,7 @@ a:focus, a:hover {
   line-height: 26px;
   transition: all 0.2s;
   padding: 4px 0px;
+  
 }
 .header-list-categories .categories-item a::after {
   content: "";
@@ -2724,6 +2737,7 @@ footer .footer-wrap {
 footer .footer-body {
   padding: 80px 0;
 }
+
 footer .footer-bottom-wrap {
   padding-top: 14px;
   border-top: 1px solid var(--line);
