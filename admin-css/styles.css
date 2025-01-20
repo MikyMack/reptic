@@ -3157,7 +3157,7 @@ select option {
 }
 .login-page .left {
   width: 100%;
-  background-image: url(../images/images-section/bg-login.jpg);
+  background-image: url(../admin-images/images-section/bg-login.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
