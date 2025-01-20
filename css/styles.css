@@ -6344,13 +6344,13 @@ form .cols > * {
 }
 .video-logo {
   background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
-  padding: 20px;
+  padding: 30px;
       margin-right: 10px;/* Add padding for spacing inside the div */
   border-radius: 10px; /* Optional: Rounded corners */
   color: #fff; /* Ensure text is visible on dark background */
   text-align: center; /* Center the content inside */
   max-width: 320px; /* Optional: Set a max width */
-  margin: 0 auto;
+   margin: 1rem;
   width: 400px;
   height: 200px;
   display: flex;
@@ -14050,18 +14050,31 @@ ul.list-text.type-number {
   .video-logo{
     height: 125px;
     width: 100%;
-    margin-bottom: 0;
-    float: left;
+    margin-bottom: 1rem;
+   margin: 1rem;
+   padding: 1rem;
   
   }
+  .content-slider{
+    display: flex;
+    justify-content: center;
+   padding: 1rem;
+   align-items: center;
+   text-align: center;
+
+  }
   .box-content{
-    display: flex!important;
+  
     justify-content: center!important;
     align-items: start!important;
   }
   .vdo-ret-logo{
     height: 40px!important;
     width: 40px!important;
+    display: flex;
+    justify-content: center!important;
+    align-items: center;
+    margin: auto;
    
   }
   .tf-slideshow .title-display{
@@ -14070,6 +14083,7 @@ ul.list-text.type-number {
   .banner-title{
     font-size: 14px;
   }
+
 }
 @media (min-width: 992px) {
   .slider-parallax .wrap-slider {
