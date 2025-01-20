@@ -1,41 +1,5 @@
 @charset "UTF-8";
-/* ---------------------------------------------------------
-    * Name: Modave - Multipurpose eCommerce
-    * Version: 1.0.1
-    * Author: Themesflat
-    * Author URI: http://themesflat.com 
 
-	* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-
-        * header
-        * footer
-        * tabs
-        * slider banner
-        * button
-        * form
-        * nice select
-        * carousel
-        * avatar
-        * pop up
-        * box icon
-        * hover
-        * collection
-        * product
-        * blog
-        * testimonial
-        * lookbook
-        * accordion
-        * zoom
-        * shop
-
-    * section
-
-    * Responsive
- ------------------------------------------------------------------------------ */
 /*--------- Abstracts variable ---------- */
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Giga:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+Antique&display=swap');
 @import url(bootstrap-select.min.css);
@@ -415,7 +379,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: "Montserrat", serif!important;
   text-rendering: optimizeLegibility;
   color: var(--main);
   font-weight: 500;
@@ -1814,7 +1778,7 @@ a:focus, a:hover {
 #header .box-nav-ul .item-link {
   font-size: 16px;
   line-height: 26px;
-  font-weight: 600;
+  font-weight: 400;
   display: flex;
   align-items: center;
   gap: 4px;
@@ -2453,11 +2417,12 @@ a:focus, a:hover {
   align-items: center;
 }
 .header-list-categories .categories-item a {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 16px;
   line-height: 26px;
   transition: all 0.2s;
   padding: 4px 0px;
+  font-family: var(--main-font);
 }
 .header-list-categories .categories-item a::after {
   content: "";
@@ -16472,8 +16437,8 @@ button .icon {
 .banner-title {
   
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
- 
-  font-weight: bold; 
+ font-family: var(--main-font);
+  font-weight: 400; 
 }
 .rtl .tf-countdown-lg .countdown__item:not(:last-child)::after {
   left: -22px;
