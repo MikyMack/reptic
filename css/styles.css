@@ -482,6 +482,15 @@ h6 {
   opacity: 0; /* Start hidden */
   animation: slide-in 1.5s ease-out forwards;
   font-family: "Instrument Sans", sans-serif;
+  width: 50%!;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.video-banner{
+  width: 50%;
+
 }
 .video-text{
   font-family: "Barlow Semi Condensed", serif;
@@ -3464,11 +3473,14 @@ footer.has-pb {
 .wrap-slider .content-slider {
   display: grid;
   gap: 20px;
+
 }
 .wrap-slider .box-title-slider {
   display: grid;
   gap: 10px;
+  
 }
+
 .wrap-slider .box-title-slider .subtitle {
   margin-bottom: 12px;
 }
@@ -6305,6 +6317,7 @@ form .cols > * {
   height: 120px!important;
   object-fit: contain;
   border-radius: 10px;
+  margin: auto;
 }
 .video-logo {
   background-color: rgba(0, 0, 0, 0.5); /* Transparent black background */
@@ -6323,6 +6336,13 @@ form .cols > * {
   flex-direction: column;
  margin-top: 1rem;
    /* Center the div horizontally if needed */
+}
+.video-banner2{
+  width: 500px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: center;
 }
 .video-logo img{
   width: 150px!important;
@@ -14008,6 +14028,11 @@ ul.list-text.type-number {
     height: 120px;
     margin-bottom: 1rem;
   }
+  .video-banner,.video-banner2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
 
 }
 @media (max-width: 552px) {
@@ -14015,7 +14040,7 @@ ul.list-text.type-number {
     height: 125px;
     width: 100%;
     margin-bottom: 1rem;
-   margin: 1rem;
+   margin-bottom: 1rem;
    padding: 1rem;
   
   }
@@ -14026,6 +14051,10 @@ ul.list-text.type-number {
    align-items: center;
    text-align: center;
 
+  }
+  .video-logo img{
+    width: 110px!important;
+    height: 50px;
   }
   .box-content{
   
@@ -14042,10 +14071,10 @@ ul.list-text.type-number {
    
   }
   .tf-slideshow .title-display{
-    font-size: 28px!important;
+    font-size: 21px!important;
   }
   .banner-title{
-    font-size: 14px;
+    font-size: 12px;
   }
 
 }
