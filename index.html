@@ -65,30 +65,39 @@
                     <div class="row wrapper-header align-items-center justify-content-between">
                         <div class="col-xl-5 d-none d-xl-block">
                             <ul class="header-list-categories">
-                                <li class="categories-item active"><a href="index.html" class="text-uppercase ">Home</a>
-                                </li>
-                                <li class="categories-item"><a href="products.html" class="text-uppercase">shop</a></li>
-
+                                <li class="categories-item "><a href="/" class="text-uppercase">Home</a></li>
+                                <li class="categories-item active"><a href="/shop" class="text-uppercase">shop</a></li>
+                           
                             </ul>
                         </div>
                         <div class="col-md-4 col-3 d-xl-none">
-                            <a href="#mobileMenu" class="mobile-menu" data-bs-toggle="offcanvas"
-                                aria-controls="mobileMenu">
+                            <a href="#mobileMenu" class="mobile-menu" data-bs-toggle="offcanvas" aria-controls="mobileMenu">
                                 <i class="icon icon-categories"></i>
                             </a>
                         </div>
-                        <div class="col-xl-2 col-md-4 col-6 text-center">
-                            <a href="index.html" class="logo-header">
-                                <img src="img/logo.png" alt="logo" class="logo">
-                            </a>
-                        </div>
+                        <% let logoDisplayed = false; %>
+                        <% logos.forEach(function(logo) { %>
+                            <% if (logo.toggled) { %>
+                                <div class="col-xl-2 col-md-4 col-6 text-center">
+                                    <a href="/" class="logo-header">
+                                        <img src="<%= logo.image %>" alt="<%= logo.title %>" class="logo">
+                                    </a>
+                                </div>
+                                <% logoDisplayed = true; %>
+                            <% } %>
+                        <% }); %>
+                        <% if (!logoDisplayed) { %>
+                            <div class="col-xl-2 col-md-4 col-6 text-center">
+                                <a href="/" class="logo-header">
+                                    <img src="img/logo.png" alt="default logo" class="logo">
+                                </a>
+                            </div>
+                        <% } %>
                         <div class="col-xl-5 d-none  d-xl-block ">
                             <ul class="header-list-categories d-flex justify-content-end">
-                                <li class="categories-item "><a href="about-us.html" class="text-uppercase">about us</a>
-                                </li>
-                                <li class="categories-item"><a href="contact.html" class="text-uppercase">contact</a>
-                                </li>
-
+                                <li class="categories-item "><a href="/about" class="text-uppercase">about us</a></li>
+                                <li class="categories-item"><a href="/contact" class="text-uppercase">contact</a></li>
+                            
                             </ul>
                         </div>
                     </div>
@@ -99,42 +108,29 @@
                     <div class="wrapper-header d-flex justify-content-center align-items-center">
                         <nav class="box-navigation text-center">
                             <ul class="box-nav-ul d-flex align-items-center justify-content-center d-none d-xl-flex">
-                                <li class="menu-item  ">
-                                    <a href="products.html" class="item-link">
-                                        BED LINEN</a>
-
-                                </li>
-                                <li class="menu-item2  ">
-                                    <a href="products.html" class="item-link">
-                                        SOFT GOODS</a>
-
-                                </li>
-                                <li class="menu-item2">
-                                    <a href="products.html" class="item-link text-uppercase">Bath linen</a>
-
-                                </li>
-                                <li class="menu-item position-relative">
-                                    <a href="products.html" class="item-link text-uppercase">TABLE LINEN
-
-                                        <i class="icon icon-arrow-down"></i></a>
-                                    <div class="sub-menu submenu-default ">
-                                        <ul class="menu-list ">
-                                            <li><a href="products.html" class="menu-link-text">PERCALE</a></li>
-                                            <li><a href="products.html" class="menu-link-text">Raso Riga</a></li>
-                                            <li><a href="products.html" class="menu-link-text">Roma</a></li>
-                                            <li><a href="products.html" class="menu-link-text">Alissa</a></li>
-
-                                        </ul>
-                                    </div>
-                                </li>
-
-
+                                <% categories.forEach(function(category) { %>
+                                    <% if (category.toggled) { %>
+                                        <li class="menu-item position-relative">
+                                            <a href="/shop" class="item-link text-uppercase"><%= category.title %></a>
+                                            <% if (category.subCategory && category.subCategory.length > 0) { %>
+                                                <i class="icon icon-arrow-down"></i>
+                                                <div class="sub-menu submenu-default">
+                                                    <ul class="menu-list">
+                                                        <% category.subCategory.forEach(function(subCat) { %>
+                                                            <li><a href="/shop" class="menu-link-text"><%= subCat.title %></a></li>
+                                                        <% }); %>
+                                                    </ul>
+                                                </div>
+                                            <% } %>
+                                        </li>
+                                    <% } %>
+                                <% }); %>
                             </ul>
-
+                           
                         </nav>
                     </div>
                 </div>
-
+                
             </div>
         </header>
         <!-- /Header -->
