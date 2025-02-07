@@ -3157,7 +3157,7 @@ select option {
 }
 .login-page .left {
   width: 100%;
-  background-image: url(../images/images-section/bg-login.jpg);
+  background-image: url(../admin-images/images-section/bg-login.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -4130,9 +4130,9 @@ select option {
 .wg-table.table-recent-orders ul.table-title > *:nth-child(6) {
   width: 122px;
 }
-.wg-table.table-product-list > * {
+/* .wg-table.table-product-list > * {
   min-width: 1492px;
-}
+} */
 .wg-table.table-product-list .wg-product,
 .wg-table.table-product-list ul.table-title {
   padding: 12px;
@@ -4189,9 +4189,9 @@ select option {
 .wg-table.table-product-list .wg-product:hover {
   background-color: var(--hv-item) !important;
 }
-.wg-table.table-all-category > * {
+/* .wg-table.table-all-category > * {
   min-width: 1492px;
-}
+} */
 .wg-table.table-all-category .wg-product,
 .wg-table.table-all-category ul.table-title {
   padding: 12px;
@@ -4201,11 +4201,11 @@ select option {
 .wg-table.table-all-category ul.table-title > * {
   width: 100%;
 }
-.wg-table.table-all-category .wg-product > *:nth-child(1),
+/* .wg-table.table-all-category .wg-product > *:nth-child(1),
 .wg-table.table-all-category ul.table-title > *:nth-child(1) {
   width: 430px;
   flex-shrink: 0;
-}
+} */
 .wg-table.table-all-category .wg-product > *:last-child,
 .wg-table.table-all-category ul.table-title > *:last-child {
   width: 110px;
@@ -5685,5 +5685,6 @@ select option {
     max-height: unset;
   }
 }
+
 
 /*# sourceMappingURL=styles.css.map */
